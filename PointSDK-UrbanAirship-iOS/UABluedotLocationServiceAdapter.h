@@ -6,7 +6,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "BDPointSDK.h"
+#import <BDPointSDK/BDPointSDK.h>
 #import <AirshipKit/AirshipKit.h>
 
 /**
