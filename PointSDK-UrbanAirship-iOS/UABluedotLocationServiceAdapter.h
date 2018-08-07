@@ -22,7 +22,7 @@
  * <p>Implement this method to provide your own action when a Zone is triggered by entering a Fence.</p>
  *
  * @param fence             The fence that the user entered in order to trigger this custom action.
- * @param createZoneInfo    The zone containing the entered fence.
+ * @param zoneInfo    The zone containing the entered fence.
  * @param location          The location relevant information of the device when the custom action was triggered.
  * @param willCheckOut      Whether a subsequent Check Out callback is expected when the device moves a significant distance away from the Fence.
  * @param customData        The custom fields setup from "Dashboard" in the <b>Point Access</b> web-interface.</p>
