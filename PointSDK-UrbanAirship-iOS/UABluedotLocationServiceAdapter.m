@@ -9,8 +9,6 @@
 #import "UABluedotLocationServiceAdapter.h"
 
 #define API_KEY_PROPERTY @"bluedotApiKey"
-#define USERNAME_PROPERTY @"bluedotUsername"
-#define PACKAGE_NAME_PROPERTY @"bluedotPackageName"
 
 #define TAG_EXPIRY 7.0
 
@@ -40,29 +38,25 @@
 {
     NSBundle *mainBundle = [NSBundle mainBundle];
     NSString *apiKey = [mainBundle objectForInfoDictionaryKey:API_KEY_PROPERTY];
-    NSString *username = [mainBundle objectForInfoDictionaryKey:USERNAME_PROPERTY];
-    NSString *packageName = [mainBundle objectForInfoDictionaryKey:PACKAGE_NAME_PROPERTY];
     
-    if ( apiKey == nil || username == nil || packageName == nil ) {
-        NSLog(@"Please make sure you have added the following properties: %@, %@ and %@ to your Info.plist.", API_KEY_PROPERTY, USERNAME_PROPERTY, PACKAGE_NAME_PROPERTY);
+    if (apiKey == nil) {
+        NSLog(@"Please make sure you have added the following properties: %@ to your Info.plist.", API_KEY_PROPERTY);
         return;
     }
     
     [BDLocationManager instance].sessionDelegate = [UABluedotLocationServiceAdapter shared];
     
-    [self authenticateWithApiKey:apiKey packageName:packageName username:username];
+    [self authenticateWithApiKey:apiKey];
 }
 
 - (void)authenticateWithApiKey:(NSString *)apiKey
-                   packageName:(NSString *)packageName
-                      username:(NSString *)username
 {
     if ( self.authenticated )
     {
         return;
     }
     
-    [[BDLocationManager instance] authenticateWithApiKey:apiKey packageName:packageName username:username];
+    [[BDLocationManager instance] authenticateWithApiKey:apiKey];
     
     self.authenticated = YES;
 }
@@ -204,9 +198,7 @@
 
 # pragma mark BDPSessionDelegate
 
-- (void)willAuthenticateWithUsername: (NSString *)username
-                              apiKey: (NSString *)apiKey
-                         packageName: (NSString *)packageName
+- (void)willAuthenticateWithApiKey: (NSString *)apiKey
 {
     
 }
