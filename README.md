@@ -35,3 +35,13 @@ Implement `UAPushNotificationDelegate` and `UABluedotLocationServiceAdapterDeleg
     UABluedotLocationServiceAdapter.shared().delegate = self
 
 For more details please visit [Bluedot documentation](https://docs.bluedot.io) and [Urban Airship SDK for iOS](https://docs.urbanairship.com/reference/libraries/ios/latest/index.html) and check out our [integration example](https://github.com/Bluedot-Innovation/PointSDK-UrbanAirshipIntegrationExample-iOS)
+
+## Copyright and license
+
+Created by Bluedot Innovation in 2018.
+Copyright © 2018 Bluedot Innovation. All rights reserved.
+
+By dowloading or using the Bluedot Point SDK for iOS, You agree to the Bluedot [Terms and Conditions](http://www.bluedotinnovation.com/html/downloads/pdfs/terms-and-conditions-bluedot-070814.pdf)
+and [Privacy Policy](http://www.bluedotinnovation.com/html/downloads/pdfs/privacy-policy-bluedot-170815.pdf)
+and [Billing Policy](http://www.bluedotinnovation.com/html/downloads/pdfs/privacy-policy-bluedot-170815.pdf)
+and acknowledge that such terms govern Your use of and access to the iOS SDK.
