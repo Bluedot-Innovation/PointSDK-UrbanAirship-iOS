@@ -5,10 +5,10 @@
 
 ## Getting started
 
-Add pod 'BluedotPointSDK', '~> 1.12' similar to the following to your Podfile:
+Add pod 'BluedotPointSDK-UrbanAirship', '~> 1.0' similar to the following to your Podfile:
 
     target 'MyApp' do
-        pod 'BluedotPointSDK', '~> 1.12'
+        pod 'BluedotPointSDK-UrbanAirship', '~> 1.0'
     end
 
 Then run a pod install inside your terminal, or from CocoaPods.app.
