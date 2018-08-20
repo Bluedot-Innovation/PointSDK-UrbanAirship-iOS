@@ -3,7 +3,7 @@
 ### Overview
 > [Urban Airship](https://www.urbanairship.com/) is an American company which provides leading brands with a market-leading mobile engagement platform and digital wallet solution. [Wikipedia](https://en.wikipedia.org/wiki/Urban_Airship)
 
-## Getting started
+### Getting started
 
 Add pod 'BluedotPointSDK-UrbanAirship', '~> 1.0' similar to the following to your Podfile:
 
@@ -11,7 +11,7 @@ Add pod 'BluedotPointSDK-UrbanAirship', '~> 1.0' similar to the following to you
         pod 'BluedotPointSDK-UrbanAirship', '~> 1.0'
     end
 
-Then run a pod install inside your terminal, or from CocoaPods.app.
+Then run a `pod install` inside your terminal, or from CocoaPods.app.
 
 After installing Cocoapods add following key-value into your application Info.plist
 
